@@ -9,7 +9,7 @@ A crawler of vertical communities achieved by GOLANG.
 ![image](https://raw.githubusercontent.com/hu17889/doc/master/go_spider/img/logo.png)
 
 
-Latest stable Release: [Version 1.2 (Sep 23, 2014)](https://github.com/hu17889/go_spider/releases).
+Latest stable Release: [Version 1.2 (Sep 23, 2014)](https://go_spider/releases).
 
 
 * [![go_spider讨论群](http://pub.idqqimg.com/wpa/images/group.png)](http://shang.qq.com/wpa/qunwpa?idkey=29f4d06e7fa2b401bc231274d08ada879db777bbf955a44c0e598aaf3d574963) QQ群号：337344607
@@ -30,13 +30,13 @@ Latest stable Release: [Version 1.2 (Sep 23, 2014)](https://github.com/hu17889/g
 
 ## Documentation
 
-[中文文档](https://github.com/hu17889/go_spider/wiki/%E4%B8%AD%E6%96%87%E6%96%87%E6%A1%A3) && [常见问题](https://github.com/hu17889/go_spider/wiki/%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98%E4%B8%8E%E5%8A%9F%E8%83%BD%E8%AF%B4%E6%98%8E).
+[中文文档](https://go_spider/wiki/%E4%B8%AD%E6%96%87%E6%96%87%E6%A1%A3) && [常见问题](https://go_spider/wiki/%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98%E4%B8%8E%E5%8A%9F%E8%83%BD%E8%AF%B4%E6%98%8E).
 
 
 ## Installation
 
 ```
-go get github.com/hu17889/go_spider
+go get go_spider
 go get github.com/PuerkitoBio/goquery
 go get github.com/bitly/go-simplejson
 go get golang.org/x/net/html/charset
@@ -49,10 +49,10 @@ You can download packages from [http://gopm.io/](http://gopm.io/) in China.
 ## Use example
 
 Here is an example for crawling github content. You can have a try of the crawl process.
-* `go install github.com/hu17889/go_spider/example/github_repo_page_processor`
+* `go install go_spider/example/github_repo_page_processor`
 * `./bin/github_repo_page_processor`
 
-More examples here: [examples](https://github.com/hu17889/go_spider/tree/master/example).
+More examples here: [examples](https://go_spider/tree/master/example).
 
 
 ## Make your spider
@@ -163,7 +163,7 @@ These key-value pairs will be saved in PageItems and urls will be pushed in Sche
 
 
 ## License
-go_spider is licensed under the [Mozilla Public License Version 2.0](https://github.com/hu17889/go_spider/blob/master/LICENSE)
+go_spider is licensed under the [Mozilla Public License Version 2.0](https://go_spider/blob/master/LICENSE)
 
 Mozilla summarizes the license scope as follows:
 > MPL: The copyleft applies to any files containing MPLed code.

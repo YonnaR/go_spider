@@ -7,8 +7,8 @@ package scheduler_test
 
 import (
     "fmt"
-    "github.com/hu17889/go_spider/core/common/request"
-    "github.com/hu17889/go_spider/core/scheduler"
+    "go_spider/core/common/request"
+    "go_spider/core/scheduler"
     "testing"
 )
 

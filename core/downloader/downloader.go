@@ -2,8 +2,8 @@
 package downloader
 
 import (
-    "github.com/hu17889/go_spider/core/common/page"
-    "github.com/hu17889/go_spider/core/common/request"
+    "go_spider/core/common/page"
+    "go_spider/core/common/request"
 )
 
 // The Downloader interface.

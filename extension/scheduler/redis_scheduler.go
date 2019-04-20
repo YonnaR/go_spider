@@ -3,8 +3,8 @@ package scheduler
 import (
     "encoding/json"
     "github.com/garyburd/redigo/redis"
-    "github.com/hu17889/go_spider/core/common/mlog"
-    "github.com/hu17889/go_spider/core/common/request"
+    "go_spider/core/common/mlog"
+    "go_spider/core/common/request"
     "sync"
 )
 
