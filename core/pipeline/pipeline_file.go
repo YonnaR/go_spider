@@ -1,6 +1,7 @@
 package pipeline
 
 import (
+	"encoding/json"
 	"go_spider/core/common/com_interfaces"
 	"go_spider/core/common/page_items"
 	"os"
@@ -21,10 +22,21 @@ func NewPipelineFile(path string) *PipelineFile {
 }
 
 func (this *PipelineFile) Process(items *page_items.PageItems, t com_interfaces.Task) {
-	this.pFile.WriteString("----------------------------------------------------------------------------------------------\n")
-	this.pFile.WriteString("Crawled url :\t" + items.GetRequest().GetUrl() + "\n")
-	this.pFile.WriteString("Crawled result : \n")
-	for key, value := range items.GetAll() {
-		this.pFile.WriteString(key + "\t:\t" + value + "\n")
+	/* 	this.pFile.WriteString("----------------------------------------------------------------------------------------------\n")
+	   	this.pFile.WriteString("Crawled url :\t" + items.GetRequest().GetUrl() + "\n")
+		   this.pFile.WriteString("Crawled result : \n")
+	*/
+	var dArr []interface{}
+	for _, value := range items.GetAll() {
+
+		var parsedD interface{}
+		c := []byte(value)
+		json.Unmarshal(c, &parsedD)
+		dArr = append(dArr, parsedD)
+		//this.pFile.WriteString(key + "\t:\t" + value + ",\n")
 	}
+
+	b, _ := json.Marshal(dArr)
+	this.pFile.Write([]byte(b))
+
 }
